@@ -1,0 +1,283 @@
+#menu a:before {
+    position: absolute;
+    content: '';
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    opacity: 0;
+    left: 15%;
+    right: 15%;
+    top: 0;
+    bottom: 0;
+    border-left: 3px solid blue;
+    border-right: 3px solid blue;
+    color: black;
+  }
+  #menu a:hover:before {
+    opacity: 1;
+    left: 0;
+    right: 0;
+  }
+header{
+    width: 100vw;
+    min-height: 91vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative; 
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#SALVADOR{
+    background-image: url("../img/cabeza1.jpg");
+}
+#HONDURAS{
+    background-image: url("../img/cabeza2.jpg");
+}
+#GUATEMALA{
+    background-image: url("../img/cabeza3.jpg");
+}
+#NICARAGUA{
+    background-image: url("../img/cabeza4.jpg");
+}
+#PANAMA{
+    background-image: url("../img/cabeza5.jpg");
+}
+#COSTARICA{
+    background-image: url("../img/cabeza6.jpg");
+}
+header .titulo{
+    font-size: 4em;
+    font-family: 'Raleway', sans-serif;
+}
+.subtitulo{
+    font-size: 2em;
+    font-weight: 300;
+}
+
+/*Simbolos Patrios */
+
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+.subox{
+    width: 255px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 4% 0%;
+}
+.imgSV{
+    width: 240px;
+    margin-bottom: 4%;
+    height: 300px;
+}
+.box2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+.textBox{
+    text-align: justify;
+    font-size:1em;
+    width: 240px;
+}
+.name{
+    padding: 2% 3%;
+    margin-bottom: 4%;
+    font-style: italic;
+    color: blue;
+    border-bottom: blue solid 2px;
+}
+
+/*Historia */
+
+.tema{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+}
+.info{
+    width: 50%;
+}
+.info-TIT{
+    color: white;
+    font-size: 2em;
+    font-style: italic;
+    text-align: center;
+    padding: 2%;
+    border-bottom: blue 2px solid;
+    margin-bottom: 2%;
+}
+.info-text{
+    color: white;
+    text-align: justify;
+}
+.pic{
+    width: 40%;
+}
+.text-img{
+    width: 100%;
+    border-top: white 4px solid;
+    border-right: white 4px solid;
+    border-bottom: blue 4px solid;
+    border-left: blue 4px solid;
+}
+@media only screen and (max-width: 739px) {
+    .info{
+        margin-bottom: 5%;
+        width: 80%;
+    }
+    .pic{
+        margin-top: 5%;
+        width: 80%;
+    }
+}  
+
+/*Listado Departamentos */
+
+.territorio{
+    display: flex;
+    width: 100vw;
+    min-height: 100vh;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 3%;
+}
+.info2{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+.box-img{
+    width: 40%;
+    margin-bottom: 3%;
+}
+.imgterritorio{
+    width: 100%;
+}
+.listaBOX{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.titTEXT2, .titsub{
+    padding: 1%;
+    border-bottom: blue 2px solid;
+    text-align: center;
+}
+@media only screen and (max-width: 739px) {
+    .info2{
+        margin-bottom: 5%;
+        width: 80%;
+    }
+    .box-img{
+        margin-top: 5%;
+        width: 80%;
+    }
+}
+/* LUGARES */
+
+.caja{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, white 0%, white 50%, black 50%, black 100%);
+}
+.caja2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100vw;
+    height: auto;
+}
+.sucaja{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 300px;
+    height: 550px;
+    padding: 1.5%;
+    margin: 4.5% 0%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.imglugar{
+    width: 100%;
+    height: 40%;
+    margin-bottom: 5%;
+}
+.nombre{
+    margin-bottom: 3%;
+    padding:2% 5%;
+    border-bottom: blue 2px solid;
+    text-align: center;
+}
+.textCaja{
+    text-align: justify;
+}
+.titLugares{
+    margin-top: 3%;
+    text-align: center;
+    padding: 1% 3%;
+    border-bottom: blue 2px solid;
+    
+}
+@media only screen and (max-width: 615px) {
+    .caja{
+        background: linear-gradient(to right, white 0%, white 50%, black 50%, black 100%);
+    }
+    .titLugares{
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-left: blue 2px solid;
+    }
+}
+
+/* FOOTER */
+ footer{
+     width: 100vw;
+     height: 20vh;
+     background-color: black;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 0.9em;
+     text-align: center;
+ }

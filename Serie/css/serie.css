@@ -1,0 +1,96 @@
+*{
+	margin:0;
+	padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+    overflow-x: hidden;
+}
+header{
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url("../img/cabeza.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative; 
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+header .titulo{
+    font-size: 4em;
+    font-family: 'Raleway', sans-serif;
+}
+.subtitulo{
+    font-size: 2em;
+    font-weight: 300;
+}
+.personajes{
+    display: flex;
+    min-height: 100vh; 
+    width: 100vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly; /*x*/
+    align-items: center; /*y*/
+}
+.box{
+    max-width: 315px;
+    min-height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5% 0%;
+}
+.pic1{
+    width: 90%;
+    height:400px;
+}
+.nombre{
+    text-align: center;
+    padding: 3%;
+    border-bottom: red solid 2px;
+}
+p{
+    text-align: justify;
+    padding: 3%;
+    font-size: 1.1em;
+}
+.tema{
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.pic{
+    display: flex;
+    justify-content: center;
+}
+.text-img{ 
+    margin: 3% 0% ;
+    max-width: 450px;
+    max-height: 250px;
+}
+.info{
+    max-width: 50%;
+}
+.info-TIT{
+    padding: 3%;
+    text-align: center;
+    border-bottom: red solid 2px;
+}
+@media only screen and (max-width: 999px){
+    .info{
+        max-width: 80%;
+    }
+}

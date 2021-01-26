@@ -1,0 +1,151 @@
+#menu a:before {
+    position: absolute;
+    content: '';
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    opacity: 0;
+    left: 15%;
+    right: 15%;
+    top: 0;
+    bottom: 0;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    color: black;
+  }
+  #menu a:hover:before {
+    opacity: 1;
+    left: 0;
+    right: 0;
+  }
+
+  header{
+    width: 100vw;
+    min-height: 91vh;
+    background-image: url("../img/cabeza7.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative; 
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .titulo{
+    font-size: 4em;
+    font-family: 'Raleway', sans-serif;
+}
+.subtitulo{
+    font-size: 2em;
+    font-weight: 300;
+}
+
+/* CAJAS */
+
+.bigbox{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.caja{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 80%;
+}
+.subcaja{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: auto;
+}
+.box{
+    margin: 2%;
+    padding: 2%;
+    width: 330px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    border: 3px black solid;
+}
+#sv{
+    background-image: url("../img/cabeza1.jpg") ;
+}
+#gua{
+    background-image: url("../img/cabeza3.jpg") ;
+}
+#hon{
+    background-image: url("../img/cabeza2.jpg") ;
+}
+#ni{
+    background-image: url("../img/cabeza4.jpg") ;
+}
+#pana{
+    background-image: url("../img/cabeza5.jpg") ;
+}
+#cos{
+    background-image: url("../img/cabeza6.jpg") ;
+}
+aside{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.tit{
+    text-align: center;
+    padding: 3%;
+    border-bottom: 2px white solid;
+}
+.text{
+    text-align: justify;
+    padding: 2%;
+}
+.asi{
+    font-size: 1.5em;
+    text-align: justify ;
+    padding: 20%;
+}
+@media only screen and (max-width: 690px) {
+    aside{
+        margin-top: 5%;
+        width: 100%;
+    }
+    .caja{
+        margin-bottom: 5%;
+        width: 100%;
+    }
+    header .titulo{
+        font-size: 3em;
+    }
+} 
+
+footer{
+    width: 100vw;
+    height: 20vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+    text-align: center;
+}
+.link{
+    width: 100%;
+}
